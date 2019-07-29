@@ -1,0 +1,33 @@
+body { min-width:1250px; }
+.container { 
+    width: 1150px;
+    margin: 0 auto;
+}
+.row:after,
+.clr:after,
+.group:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.row { margin-bottom: 20px; }
+.col { 
+    display: block;
+    float: left;
+    margin-left: 2%;
+}
+.col:first-child { margin-left: 0; }
+.span_1 { width: 6.5%; }
+.span_2 { width: 15%; }
+.span_3 { width: 23.5%; }
+.span_4 { width: 32%; }
+.span_5 { width: 40.5%; }
+.span_6 { width: 49%; }
+.span_7 { width: 57.5%; }
+.span_8 { width: 66%; }
+.span_9 { width: 74.5%; }
+.span_10 { width: 83%; }
+.span_11 { width: 91.5%; }
+.span_12 { width: 100%; }
