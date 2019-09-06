@@ -30,7 +30,8 @@ class Events_model extends CI_Model {
         $query = $this->db->query(
             "SELECT `name`, `vk_id`, `thesis`, `is_red`
             FROM `graduates` 
-            WHERE `year` = $year");
+            WHERE `year` = $year
+            ORDER BY `name`");
  
         return $query->result();
     }

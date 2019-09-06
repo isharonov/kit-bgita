@@ -25,11 +25,11 @@
 
                     <?php else: ?>
 
-                        <div class="card-body">
+                        <?php if ($event->poster): ?>
+                            <img src="<?php echo $event->poster; ?>" class="card-img-top" alt="<?php echo $event->poster_desc; ?>">
+                        <?php endif; ?>
 
-                            <?php if ($event->poster): ?>
-                                <img src="<?php echo $event->poster; ?>" class="card-img-top" alt="<?php echo $event->poster_desc; ?>">
-                            <?php endif; ?>
+                        <div class="card-body">
 
                             <h5 class="card-title"><?php echo $event->title; ?></h5>
 

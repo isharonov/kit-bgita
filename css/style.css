@@ -1,0 +1,47 @@
+html{scroll-behavior:smooth}
+
+body {
+    position: relative;
+    padding-top: 56px;
+    background-image: url('../images/bg2.gif');
+}
+
+h2 {
+    border-top: 3px solid rgb(33, 37, 41);
+    margin-top: 10px;
+}
+
+div#evelson {
+    position: relative;
+}
+div#evelson > div {
+    position: absolute;
+    bottom: 0;
+}
+
+img.mr-3 {
+    height: 64px;
+}
+
+ul.list-unstyled li.media {
+    padding-bottom: 10px;
+}
+div.card {
+    margin-bottom: 1em;
+}
+
+@media screen and (max-width: 767px) {
+    .card-columns {
+        column-count: 1;
+    }
+}
+@media screen and (min-width: 768px) {
+    .card-columns {
+        column-count: 2;
+    }
+}
+@media screen and (min-width: 992px) {
+    .card-columns {
+        column-count: 3;
+    }
+}

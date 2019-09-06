@@ -5,59 +5,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
 
 	<script src="https://kit.fontawesome.com/0abdafc5f5.js"></script>
-
-	<style>
-		body {
-			position: relative;
-			padding-top: 56px;
-			background-image: url('images/bg2.gif');
-		}
-		h2 {
-			border-top: 3px solid rgb(33, 37, 41);
-			margin-top: 10px;
-		}
-		div#evelson {
-			position: relative;
-		}
-		div#evelson > div {
-			position: absolute;
-			bottom: 0;
-		}
-		img.mr-3 {
-			height: 64px;
-		}
-		ul.list-unstyled li.media {
-			padding-bottom: 10px;
-		}
-		div.card {
-			margin-bottom: 1em;
-		}
-		@media screen and (max-width: 767px) {
-			.card-columns {
-				column-count: 1;
-			}
-		}
-		@media screen and (min-width: 768px) {
-			.card-columns {
-				column-count: 2;
-			}
-		}
-		@media screen and (min-width: 992px) {
-			.card-columns {
-				column-count: 3;
-			}
-		}
-	</style>
 
 	<title>История кафедры ИТ БГИТУ</title>
 
 </head>
-<body data-spy="scroll" data-target="#timeMachine" data-offset="0">
+<body data-spy="scroll" data-target="#navigator" data-offset="0">
 <header>
 
-	<nav id="timeMachine" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+	<nav id="navigator" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
 		<div class="container">
 			<span class="navbar-brand mb-0 h1"><img src="images/logo.gif" height="30" class="d-inline-block align-top" alt="Кафедра информационных технологий БГИТУ" title="Кафедра информационных технологий БГИТУ" /> История</span>
 
@@ -67,7 +25,7 @@
 				
 			<div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
 
-				<ul class="nav nav-pills">
+				<ul id="timeMachine" class="nav nav-pills">
 					<li class="nav-item"><a class="nav-link" href="#2012">2012</a></li>
 					<li class="nav-item"><a class="nav-link" href="#2011">2011</a></li>
 					<li class="nav-item"><a class="nav-link" href="#2010">2010</a></li>
