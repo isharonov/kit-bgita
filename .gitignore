@@ -1,2 +1,4 @@
-#ignore all .DS_Store files
 *.DS_Store
+._*
+application/config/production
+/.htaccess
