@@ -9,7 +9,6 @@ class Events_model extends CI_Model {
     public function getYears() {
         $query = $this->db->query('SELECT DISTINCT `year` FROM `events`');
         $result = $query->result();
-        $years = [];
 
         foreach ($result as $value) {
             $years[] = $value->year;

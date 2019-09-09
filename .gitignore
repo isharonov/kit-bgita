@@ -1,2 +1,3 @@
 *.DS_Store
 ._*
+application/config/production
