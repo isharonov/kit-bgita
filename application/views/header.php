@@ -3,13 +3,14 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="<?php echo $description; ?>">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 
 	<script src="https://kit.fontawesome.com/0abdafc5f5.js"></script>
 
-	<title>История кафедры ИТ БГИТУ</title>
+	<title><?php echo $title; ?></title>
 
 </head>
 <body data-spy="scroll" data-target="#navigator" data-offset="0">
@@ -17,7 +18,7 @@
 
 	<nav id="navigator" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
 		<div class="container">
-			<span class="navbar-brand mb-0 h1"><img src="images/logo.gif" height="30" class="d-inline-block align-top" alt="Кафедра информационных технологий БГИТУ" title="Кафедра информационных технологий БГИТУ" /> История</span>
+			<span class="navbar-brand mb-0 h1"><img src="images/logo.gif" height="30" class="d-inline-block align-top" alt="Кафедра информационных технологий БГИТУ" title="Кафедра информационных технологий БГИТУ" /> <?php echo $h1; ?></span>
 
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
