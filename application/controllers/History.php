@@ -11,6 +11,10 @@ class History extends CI_Controller {
 
 	public function index()	{
 
+        $this->data['description'] = "История кафедры Информационных технологий Брянского государственного инженерно-технологического университета (БГИТУ) с 1972 по 2012 годы.";
+        $this->data['title'] = "История кафедры ИТ БГИТУ";
+        $this->data['h1'] = "История";
+
         $years = $this->events_model->getYears();
 
         foreach ($years as $value) {
@@ -18,7 +22,7 @@ class History extends CI_Controller {
             $this->data['graduates'][$value] = $this->events_model->getGraduates($value);
         }
 
-        $this->load->view('header');
+        $this->load->view('header', $this->data);
         $this->load->view('events', $this->data);
 		$this->load->view('footer');
 	}
