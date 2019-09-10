@@ -53,7 +53,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<li><a href="https://github.com/isharonov/kit-bgita" title="Репозиторий сайта на Гитхабе">Репозиторий сайта на Гитхабе</a>.</li>
 	</ul>
 	<p>
-		<a href="index.html" title="На Главную"><img src="images/404.jpg" alt="404"></a>
+		<a href="/" title="На Главную"><img src="images/404.jpg" alt="404"></a>
 	</p>
 </div>
 </body>
