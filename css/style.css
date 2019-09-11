@@ -3,12 +3,16 @@ html{scroll-behavior:smooth}
 body {
     position: relative;
     padding-top: 56px;
-    background-image: url('../images/bg2.gif');
+    background-image: url('../images/bg2.png');
 }
 
 h2 {
     border-top: 3px solid rgb(33, 37, 41);
     margin-top: 10px;
+}
+
+.logo-svg {
+    line-height: normal;
 }
 
 div#evelson {

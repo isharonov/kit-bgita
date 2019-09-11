@@ -1,4 +1,7 @@
 *.DS_Store
 ._*
 application/config/production
+source-psd
+uncompressed-jpg
+uncompressed-png
 /.htaccess

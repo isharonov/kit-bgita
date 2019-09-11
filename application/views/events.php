@@ -14,7 +14,7 @@
 
                         <div class="row no-gutters">
                             <div class="col-4">
-                                <img src="<?php echo $event->poster; ?>" class="card-img" alt="<?php echo $event->poster_desc; ?>">
+                                <img src="<?php echo $event->poster; ?>" loading="lazy" class="card-img" alt="<?php echo $event->poster_desc; ?>">
                             </div>
                             <div class="col-8">
                                 <div class="card-body">
@@ -26,7 +26,7 @@
                     <?php else: ?>
 
                         <?php if ($event->poster): ?>
-                            <img src="<?php echo $event->poster; ?>" class="card-img-top" alt="<?php echo $event->poster_desc; ?>">
+                            <img src="<?php echo $event->poster; ?>" loading="lazy" class="card-img-top" alt="<?php echo $event->poster_desc; ?>">
                         <?php endif; ?>
 
                         <div class="card-body">
