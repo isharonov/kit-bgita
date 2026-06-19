@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="История кафедры Информационных технологий Брянского государственного инженерно-технологического университета (БГИТУ) с 1972 по 2012 годы.">
+  <title>История кафедры ИТ БГИТУ</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav" id="site-nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="#">
+        <img src="images/logo.svg" width="90" height="27" alt="Кафедра ИТ БГИТУ">
+        <span>История</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Навигация по годам" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-years" id="nav-years">
+        <!-- Populated by JS -->
+      </div>
+
+      <div class="nav-links">
+        <a href="http://www.bgitu.ru/universitet/instituty/inzhenerno-ekonomicheskiy-institut/kafedra-informatsionnykh-tekhnologiy/" title="Сайт кафедры БГИТУ" aria-label="Сайт кафедры">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="8"/></svg>
+        </a>
+        <a href="https://vk.com/kit_bgita" title="VK сообщество" aria-label="ВКонтакте">
+          <svg width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M11.701 18.771h1.437s.433-.047.654-.284c.21-.221.21-.63.21-.63s-.031-1.927.869-2.21c.887-.281 2.012 1.86 3.211 2.683.916.629 1.605.494 1.605.494l3.211-.044s1.682-.105.887-1.426c-.061-.105-.451-.975-2.371-2.76-2.012-1.861-1.742-1.561.676-4.787 1.469-1.965 2.07-3.166 1.875-3.676-.166-.48-1.26-.361-1.26-.361l-3.602.031s-.27-.031-.465.09c-.195.119-.314.391-.314.391s-.572 1.529-1.336 2.82c-1.623 2.729-2.268 2.879-2.523 2.699-.604-.391-.449-1.58-.449-2.432 0-2.641.404-3.75-.781-4.035-.39-.091-.681-.15-1.685-.166-1.29-.014-2.378.01-2.995.311-.405.203-.72.652-.539.675.24.03.779.146 1.064.537.375.506.359 1.636.359 1.636s.211 3.116-.494 3.503c-.495.262-1.155-.28-2.595-2.756-.735-1.26-1.291-2.67-1.291-2.67s-.105-.256-.299-.406c-.227-.165-.557-.225-.557-.225l-3.435.03s-.51.016-.689.24c-.166.195-.016.615-.016.615s2.686 6.287 5.732 9.453c2.79 2.902 5.956 2.715 5.956 2.715z"/></svg>
+        </a>
+        <a href="https://github.com/isharonov/kit-bgita" title="GitHub" aria-label="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="carousel" id="carousel" aria-label="Фотографии выпусков">
+      <div class="carousel-track" id="carousel-track">
+        <div class="carousel-slide">
+          <picture>
+            <source srcset="images/2012.webp" type="image/webp">
+            <img src="images/2012.png" alt="Выпуск 2012">
+          </picture>
+        </div>
+        <div class="carousel-slide">
+          <picture>
+            <source srcset="images/2011.webp" type="image/webp">
+            <img src="images/2011.png" alt="Выпуск 2011" loading="lazy">
+          </picture>
+        </div>
+        <div class="carousel-slide">
+          <picture>
+            <source srcset="images/2010.webp" type="image/webp">
+            <img src="images/2010.png" alt="Выпуск 2010" loading="lazy">
+          </picture>
+        </div>
+        <div class="carousel-slide">
+          <picture>
+            <source srcset="images/2009.webp" type="image/webp">
+            <img src="images/2009.png" alt="Выпуск 2009" loading="lazy">
+          </picture>
+        </div>
+      </div>
+      <button class="carousel-btn carousel-btn--prev" id="carousel-prev" aria-label="Предыдущий слайд">&#8592;</button>
+      <button class="carousel-btn carousel-btn--next" id="carousel-next" aria-label="Следующий слайд">&#8594;</button>
+      <div class="carousel-dots" id="carousel-dots"></div>
+    </div>
+
+    <div class="hero-overlay">
+      <div class="hero-text">
+        <p class="hero-eyebrow">Кафедра информационных технологий</p>
+        <h1 class="hero-title">История</h1>
+        <p class="hero-sub">БГИТУ · 1972 — 2012</p>
+      </div>
+    </div>
+
+    <!-- Evelson preserved layout element -->
+    <div class="hero-evelson" aria-hidden="true">
+      <picture>
+        <source srcset="images/evelson_main.webp" type="image/webp">
+        <img src="images/evelson_main.png" alt="Лев Игоревич Евельсон">
+      </picture>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content" id="main">
+    <div class="timeline-layout">
+
+      <!-- Sticky sidebar -->
+      <aside class="timeline-sidebar" id="timeline-sidebar">
+        <div class="sidebar-inner">
+          <p class="sidebar-label">Перейти к году</p>
+          <nav class="sidebar-nav" id="sidebar-nav" aria-label="Хронология">
+            <!-- Populated by JS -->
+          </nav>
+        </div>
+      </aside>
+
+      <!-- Timeline -->
+      <div class="timeline" id="timeline">
+        <!-- Populated by JS -->
+      </div>
+
+    </div>
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal-backdrop" id="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-box">
+      <div class="modal-header">
+        <h2 class="modal-title" id="modal-title"></h2>
+        <button class="modal-close" id="modal-close" aria-label="Закрыть">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="http://www.bgitu.ru/universitet/instituty/inzhenerno-ekonomicheskiy-institut/kafedra-informatsionnykh-tekhnologiy/" title="Кафедра ИТ БГИТУ">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="8"/></svg>
+        </a>
+        <a href="https://vk.com/kit_bgita" title="VK сообщество">
+          <svg width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M11.701 18.771h1.437s.433-.047.654-.284c.21-.221.21-.63.21-.63s-.031-1.927.869-2.21c.887-.281 2.012 1.86 3.211 2.683.916.629 1.605.494 1.605.494l3.211-.044s1.682-.105.887-1.426c-.061-.105-.451-.975-2.371-2.76-2.012-1.861-1.742-1.561.676-4.787 1.469-1.965 2.07-3.166 1.875-3.676-.166-.48-1.26-.361-1.26-.361l-3.602.031s-.27-.031-.465.09c-.195.119-.314.391-.314.391s-.572 1.529-1.336 2.82c-1.623 2.729-2.268 2.879-2.523 2.699-.604-.391-.449-1.58-.449-2.432 0-2.641.404-3.75-.781-4.035-.39-.091-.681-.15-1.685-.166-1.29-.014-2.378.01-2.995.311-.405.203-.72.652-.539.675.24.03.779.146 1.064.537.375.506.359 1.636.359 1.636s.211 3.116-.494 3.503c-.495.262-1.155-.28-2.595-2.756-.735-1.26-1.291-2.67-1.291-2.67s-.105-.256-.299-.406c-.227-.165-.557-.225-.557-.225l-3.435.03s-.51.016-.689.24c-.166.195-.016.615-.016.615s2.686 6.287 5.732 9.453c2.79 2.902 5.956 2.715 5.956 2.715z"/></svg>
+        </a>
+        <a href="https://github.com/isharonov/kit-bgita" title="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a>
+      </div>
+      <p class="footer-copy">Кафедра информационных технологий БГИТУ · 1972–2012</p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
