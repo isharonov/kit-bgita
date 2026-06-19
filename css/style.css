@@ -485,9 +485,7 @@ button {
   }
   
   .carousel-btn {
-    width: 44px;
-    height: 44px;
-    font-size: 1.1rem;
+    display: none;
   }
 }
 
@@ -652,6 +650,7 @@ button {
 .events-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  align-items: self-start;
   gap: 20px;
 }
 
@@ -887,27 +886,20 @@ button {
 }
 
 .diploma-icon {
-  width: 36px;
-  height: 36px;
+  width: 50px;
+  height: 72px;
   flex-shrink: 0;
   border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.625rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  overflow: hidden;
 }
 
-.diploma-icon.red {
-  background: var(--color-red-diploma);
-  color: #fff;
-}
-
-.diploma-icon.blue {
-  background: var(--color-blue-diploma);
-  color: #fff;
+.diploma-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .graduate-info {
