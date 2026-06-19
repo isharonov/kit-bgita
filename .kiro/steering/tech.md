@@ -1,36 +1,40 @@
 # Tech Stack
 
-## Backend
-- **Framework:** CodeIgniter 3 (PHP)
-- **PHP pattern:** MVC — controllers in `application/controllers/`, models in `application/models/`, views in `application/views/`
-- **Database:** MySQL via `mysqli` driver; database name `kit`; charset `utf8`
-- **Entry point:** `index.php` in project root (standard CI bootstrap)
+## Frontend (Static Site)
+- **Type:** Pure static HTML/CSS/JS — no backend rendering
+- **Entry point:** `index.html` in project root
+- **Data:** `data.js` — inline JavaScript object with `events` and `graduates` arrays
 
-## Frontend
-- **CSS framework:** Bootstrap 4.0.0 (loaded from MaxCDN)
-- **JS:** jQuery 3.2.1 slim + Popper.js 1.12.9 + Bootstrap 4.0.0 JS (all from CDN)
-- **Custom CSS:** `css/style.css` — minimal overrides, responsive column layout via media queries
-- **Images:** `images/` — `.webp` preferred format, `.jpg`/`.png` fallbacks; SVG used for logo
+### CSS
+- **Framework:** None — custom CSS with CSS custom properties
+- **File:** `css/style.css` — modern design system with warm archival aesthetic
+- **Color scheme:** Light cream background (`#faf8f5`), amber accent (`#b8860b`)
+- **Responsive:** Mobile-first with CSS Grid and Flexbox
 
-## Server
-- **Web server:** Apache with `mod_rewrite` (`.htaccess` present)
-- **Output hook:** `application/hooks/compress.php` — strips whitespace from HTML output via a `post_system` hook
-- **Hooks enabled:** `$config['enable_hooks'] = TRUE`
+### JavaScript
+- **Framework:** None — vanilla ES5+ in IIFE pattern
+- **File:** `js/main.js` — handles timeline rendering, carousel, modals, scroll spy
+- **No dependencies:** No jQuery, no external libraries
 
-## Configuration
-- `application/config/config.php` — base URL, charset UTF-8, sessions, hooks
-- `application/config/database.php` — DB credentials (hostname `localhost`, db `kit`)
-- `application/config/routes.php` — default controller is `History`
-- `application/config/autoload.php` — nothing autoloaded globally; models/DB loaded per-controller
+### Fonts (Google Fonts)
+- **Display:** Cormorant Garamond (serif) — headings, year numbers
+- **Body:** DM Sans (sans-serif) — body text, navigation, UI elements
+
+### Images
+- **Location:** `images/`
+- **Format:** `.webp` preferred with `.jpg`/`.png` fallbacks via `<picture>` element
+- **Notable assets:** `logo.svg`, `diplom_red.png`, `diplom_blue.png`, graduation photos (`{year}.png`)
+
+## Deployment
+- **No build step:** Deploy files directly to any static host
+- **No package manager:** No `package.json`, no npm/yarn dependencies
+- **Server:** Any static file server (Apache, Nginx, GitHub Pages, Netlify, etc.)
 
 ## Common Tasks
 
-There is no build system, package manager, or compilation step. This is a traditional server-side PHP application deployed directly.
-
 | Task | How |
 |---|---|
-| Run locally | Point Apache/WAMP/XAMPP at project root; ensure `kit` MySQL database exists |
-| Change base URL | Edit `$config['base_url']` in `application/config/config.php` |
-| Update DB credentials | Edit `$db['default']` in `application/config/database.php` |
-| Add a route | Edit `application/config/routes.php` |
-| Enable CI debug mode | Set `ENVIRONMENT` to something other than `'production'` |
+| Run locally | Open `index.html` in browser, or use a local server (`python -m http.server`) |
+| Update data | Edit `data.js` — modify `data.events` or `data.graduates` arrays |
+| Change colors | Edit CSS custom properties in `:root` at top of `css/style.css` |
+| Add images | Place in `images/`, provide both `.webp` and fallback formats |
